@@ -32,6 +32,17 @@ ifeq ($(CONFIG_ARCH_ALOR), y)
 dtbo-y += gpu/alor-gpu.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_BENGAL), y)
+dtbo-y += gpu/bengal-gpu.dtbo
+endif
+
+ifeq ($(CONFIG_ARCH_KHAJE), y)
+dtbo-y += gpu/khaje-gpu.dtbo \
+		gpu/khajep-gpu.dtbo \
+		gpu/khajeq-gpu.dtbo \
+		gpu/khajeg-gpu.dtbo
+endif
+
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
 clean-files    := *.dtb *.dtbo
