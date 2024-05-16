@@ -36,6 +36,12 @@ ifeq ($(CONFIG_ARCH_ART), y)
 dtbo-y += gpu/art-gpu.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_PARROT), y)
+dtbo-y += gpu/parrot-gpu.dtbo \
+		gpu/parrot-sg-gpu.dtbo \
+		gpu/parrotp-sg-gpu.dtbo
+endif
+
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
 clean-files    := *.dtb *.dtbo
