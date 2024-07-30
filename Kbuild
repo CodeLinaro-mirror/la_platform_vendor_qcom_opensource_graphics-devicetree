@@ -12,6 +12,10 @@ ifeq ($(CONFIG_ARCH_TUNA), y)
 dtbo-y += gpu/tuna-gpu.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_CANOE), y)
+dtbo-y += gpu/canoe-gpu.dtbo
+endif
+
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
 clean-files    := *.dtb *.dtbo
