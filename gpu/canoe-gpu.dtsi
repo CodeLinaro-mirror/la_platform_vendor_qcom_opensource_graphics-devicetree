@@ -31,7 +31,7 @@
 
 &msm_gpu {
 	compatible = "qcom,adreno-gpu-gen8-2-0", "qcom,kgsl-3d0";
-	status = "disabled";
+	status = "ok";
 	reg = <0x0 0x3d00000 0x0 0x40000>, <0x0 0x3d50000 0x0 0x10000>,
 		<0x0 0x3d61000 0x0 0x3000>, <0x0 0x3d9e000 0x0 0x2000>;
 	reg-names = "kgsl_3d0_reg_memory", "rscc", "cx_dbgc", "cx_misc";
