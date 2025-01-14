@@ -31,7 +31,7 @@
 
 &msm_gpu {
 	compatible = "qcom,adreno-gpu-gen8-2-0", "qcom,kgsl-3d0";
-	status = "disabled";
+	status = "ok";
 	reg = <0x0 0x3d00000 0x0 0x40000>, <0x0 0x3d50000 0x0 0x10000>,
 		<0x0 0x3d61000 0x0 0x3000>, <0x0 0x3d9e000 0x0 0x2000>;
 	reg-names = "kgsl_3d0_reg_memory", "rscc", "cx_dbgc", "cx_misc";
@@ -52,6 +52,10 @@
 	qcom,min-access-length = <32>;
 
 	qcom,ubwc-mode = <6>;
+
+	qcom,tzone-names = "gpuss-0", "gpuss-1", "gpuss-2", "gpuss-3",
+			"gpuss-4", "gpuss-5", "gpuss-6", "gpuss-7",
+			"gpuss-8", "gpuss-9", "gpuss-10";
 
 	interconnects = <&gem_noc MASTER_GFX3D &mc_virt SLAVE_EBI1>;
 	interconnect-names = "gpu_icc_path";
@@ -118,8 +122,9 @@
 		interrupt-names = "hfi", "gmu";
 
 		power-domains = <&gpucc GPU_CC_CX_GDSC>,
+				<&gpucc GPU_CC_CX_GMU_GDSC>,
 				<&gxclkctl GX_CLKCTL_GX_GDSC>;
-		power-domain-names = "cx", "gx";
+		power-domain-names = "cx", "gmu_cx", "gx";
 
 		clocks = <&gpucc GPU_CC_CX_GMU_CLK>,
 			<&gpucc GPU_CC_CXO_CLK>,
@@ -131,8 +136,8 @@
 			"memnoc_clk", "ahb_clk", "hub_clk";
 
 
-		qcom,gmu-freq-table = <500000000 RPMH_REGULATOR_LEVEL_LOW_SVS>,
-					<650000000 RPMH_REGULATOR_LEVEL_SVS>;
+		qcom,gmu-freq-table = <575000000 RPMH_REGULATOR_LEVEL_LOW_SVS>,
+					<700000000 RPMH_REGULATOR_LEVEL_SVS>;
 		qcom,gmu-perf-ddr-bw = <MHZ_TO_KBPS(1555, 4)>;
 
 		iommus = <&kgsl_smmu 0x5 0x000>;

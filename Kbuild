@@ -16,6 +16,10 @@ ifeq ($(CONFIG_ARCH_CANOE), y)
 dtbo-y += gpu/canoe-gpu.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_KERA), y)
+dtbo-y += gpu/kera-gpu.dtbo
+endif
+
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
 clean-files    := *.dtb *.dtbo

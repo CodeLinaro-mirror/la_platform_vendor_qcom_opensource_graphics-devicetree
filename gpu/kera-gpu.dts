@@ -7,19 +7,19 @@
 /plugin/;
 
 #include <dt-bindings/clock/qcom,aop-qmp.h>
-#include <dt-bindings/clock/qcom,gcc-tuna.h>
-#include <dt-bindings/clock/qcom,gpucc-tuna.h>
+#include <dt-bindings/clock/qcom,gcc-kera.h>
+#include <dt-bindings/clock/qcom,gpucc-kera.h>
 #include <dt-bindings/clock/qcom,rpmh.h>
-#include <dt-bindings/interconnect/qcom,tuna.h>
+#include <dt-bindings/interconnect/qcom,kera.h>
 #include <dt-bindings/interrupt-controller/arm-gic.h>
 #include <dt-bindings/regulator/qcom,rpmh-regulator-levels.h>
 
-#include "tuna-gpu.dtsi"
-#include "tuna-gpu-pwrlevels.dtsi"
+#include "kera-gpu.dtsi"
+#include "kera-gpu-pwrlevels.dtsi"
 
 / {
-	model = "Qualcomm Technologies, Inc. tuna";
-	compatible = "qcom,tuna", "qcom,tunap";
-	qcom,msm-id = <0x28f 0x10000>, <0x2b6 0x10000>;
+	model = "Qualcomm Technologies, Inc. Kera SoC";
+	compatible = "qcom,kera", "qcom,kerap";
+	qcom,msm-id = <0x293 0x10000>, <0x2ae 0x10000>;
 	qcom,board-id = <0 0>;
 };

@@ -26,8 +26,8 @@
 				qcom,level = <RPMH_REGULATOR_LEVEL_NOM>;
 
 				qcom,bus-freq = <7>;
-				qcom,bus-min = <5>;
-				qcom,bus-max = <7>;
+				qcom,bus-min = <6>;
+				qcom,bus-max = <9>;
 			};
 
 			/* SVS_L2 */
@@ -37,8 +37,8 @@
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L2>;
 
 				qcom,bus-freq = <7>;
-				qcom,bus-min = <4>;
-				qcom,bus-max = <7>;
+				qcom,bus-min = <6>;
+				qcom,bus-max = <9>;
 			};
 
 			/* Low_SVS_L1 */
@@ -47,9 +47,9 @@
 				qcom,gpu-freq = <726000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L1>;
 
-				qcom,bus-freq = <7>;
-				qcom,bus-min = <4>;
-				qcom,bus-max = <7>;
+				qcom,bus-freq = <5>;
+				qcom,bus-min = <5>;
+				qcom,bus-max = <9>;
 			};
 
 			/* SVS */
@@ -59,8 +59,8 @@
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS>;
 
 				qcom,bus-freq = <3>;
-				qcom,bus-min = <2>;
-				qcom,bus-max = <5>;
+				qcom,bus-min = <3>;
+				qcom,bus-max = <7>;
 			};
 
 			/* Low_SVS */
@@ -70,8 +70,8 @@
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS>;
 
 				qcom,bus-freq = <2>;
-				qcom,bus-min = <2>;
-				qcom,bus-max = <3>;
+				qcom,bus-min = <1>;
+				qcom,bus-max = <5>;
 			};
 
 			/* Low_SVS_D1 */
@@ -81,8 +81,8 @@
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <2>;
-				qcom,bus-min = <2>;
-				qcom,bus-max = <3>;
+				qcom,bus-min = <1>;
+				qcom,bus-max = <2>;
 			};
 
 			/* Low_SVS_D3 */
@@ -92,8 +92,8 @@
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D2>;
 
 				qcom,bus-freq = <2>;
-				qcom,bus-min = <2>;
-				qcom,bus-max = <3>;
+				qcom,bus-min = <1>;
+				qcom,bus-max = <2>;
 			};
 
 			/* Low_SVS_D3 */
@@ -102,9 +102,9 @@
 				qcom,gpu-freq = <125000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D3>;
 
-				qcom,bus-freq = <2>;
+				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
-				qcom,bus-max = <2>;
+				qcom,bus-max = <1>;
 			};
 		};
 	};

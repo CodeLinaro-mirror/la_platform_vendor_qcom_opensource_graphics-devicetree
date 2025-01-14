@@ -16,6 +16,7 @@ Required properties:
 			Must include "qcom,adreno-gpu-gen7-3-0" for Parrot target.
 			Must include "qcom,adreno-gpu-gen7-9-0" for Pineapple target.
 			Must include "qcom,adreno-gpu-gen7-9-1" for Pineapple V2 target.
+			Must include "qcom,adreno-gpu-gen7-17-0" for Kera target.
 			Must include "qcom,adreno-gpu-gen8-6-0" for Tuna target.
 - reg:			Specifies the list of register regions for the device.
 - reg-names:		Resource names used for the register regions specified
@@ -81,8 +82,9 @@ Power Domains:
 - power-domains:		List of PM domain specifiers that reference each power-domain
 				used by the GPU
 - power-domain-names:		List of names that represent each of the specifiers in the
-				'power-domains' property. Includes 'gpu_cx' and 'gpu_gx' which
-				represent the power-domains for CX and GX GDSC, respectively.
+				'power-domains' property. Includes 'cx', 'gx' and 'gmu_cx'
+				which represent the power-domains for CX GDSC, GX GDSC and
+				GMU CX GDSC respectively.
 
 IOMMU Data:
 - iommu:			Phandle for the KGSL IOMMU device node
