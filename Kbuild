@@ -14,7 +14,8 @@ dtbo-y += gpu/tuna-gpu.dtbo \
 endif
 
 ifeq ($(CONFIG_ARCH_CANOE), y)
-dtbo-y += gpu/canoe-gpu.dtbo
+dtbo-y += gpu/canoe-gpu.dtbo \
+		gpu/canoe-v2-gpu.dtbo
 endif
 
 ifeq ($(CONFIG_ARCH_KERA), y)
