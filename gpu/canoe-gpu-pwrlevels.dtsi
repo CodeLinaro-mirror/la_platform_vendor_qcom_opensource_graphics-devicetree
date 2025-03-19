@@ -1,7 +1,15 @@
 // SPDX-License-Identifier: BSD-3-Clause
 /*
- * Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
+ * Copyright (c) 2024-2025 Qualcomm Innovation Center, Inc. All rights reserved.
  */
+
+/* ACD Control register values */
+#define ACD_LEVEL_NOM         0x882c5ffd
+#define ACD_LEVEL_SVS_L2      0xe82d5ffd
+#define ACD_LEVEL_SVS_L1      0x882e5ffd
+#define ACD_LEVEL_SVS         0xe02b5ffd
+#define ACD_LEVEL_LOW_SVS     0xc02f5ffd
+#define ACD_LEVEL_LOW_SVS_D1  0xe82b5ffd
 
 &msm_gpu {
 	/* Power levels */
@@ -28,6 +36,8 @@
 				qcom,bus-freq = <7>;
 				qcom,bus-min = <6>;
 				qcom,bus-max = <9>;
+
+				qcom,acd-level = <ACD_LEVEL_NOM>;
 			};
 
 			/* SVS_L2 */
@@ -39,9 +49,11 @@
 				qcom,bus-freq = <7>;
 				qcom,bus-min = <6>;
 				qcom,bus-max = <9>;
+
+				qcom,acd-level = <ACD_LEVEL_SVS_L2>;
 			};
 
-			/* Low_SVS_L1 */
+			/* SVS_L1 */
 			qcom,gpu-pwrlevel@2 {
 				reg = <2>;
 				qcom,gpu-freq = <726000000>;
@@ -50,6 +62,8 @@
 				qcom,bus-freq = <5>;
 				qcom,bus-min = <5>;
 				qcom,bus-max = <9>;
+
+				qcom,acd-level = <ACD_LEVEL_SVS_L1>;
 			};
 
 			/* SVS */
@@ -61,6 +75,8 @@
 				qcom,bus-freq = <3>;
 				qcom,bus-min = <3>;
 				qcom,bus-max = <7>;
+
+				qcom,acd-level = <ACD_LEVEL_SVS>;
 			};
 
 			/* Low_SVS */
@@ -72,6 +88,8 @@
 				qcom,bus-freq = <2>;
 				qcom,bus-min = <1>;
 				qcom,bus-max = <5>;
+
+				qcom,acd-level = <ACD_LEVEL_LOW_SVS>;
 			};
 
 			/* Low_SVS_D1 */
@@ -83,6 +101,8 @@
 				qcom,bus-freq = <2>;
 				qcom,bus-min = <1>;
 				qcom,bus-max = <2>;
+
+				qcom,acd-level = <ACD_LEVEL_LOW_SVS_D1>;
 			};
 
 			/* Low_SVS_D3 */
