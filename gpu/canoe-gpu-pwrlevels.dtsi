@@ -4,19 +4,16 @@
  */
 
 /* ACD Control register values */
-#define ACD_LEVEL_TURBO_L1       0xa8285ffd
-#define ACD_LEVEL_NOM_L1         0x88295ffd
-#define ACD_LEVEL_NOM            0x882c5ffd
-#define ACD_LEVEL_SVS_L2         0xa82d5ffd
-#define ACD_LEVEL_SVS_L1         0x882e5ffd
-#define ACD_LEVEL_SVS_L0         0xe02b5ffd
-#define ACD_LEVEL_SVS            0xe02b5ffd
-#define ACD_LEVEL_LOW_SVS_L2     0xc02f5ffd
-#define ACD_LEVEL_LOW_SVS_L1     0xc02f5ffd
-#define ACD_LEVEL_LOW_SVS_L0     0xc02f5ffd
-#define ACD_LEVEL_LOW_SVS        0xc02f5ffd
-#define ACD_LEVEL_LOW_SVS_D0     0xe82b5ffd
-#define ACD_LEVEL_LOW_SVS_D1     0xe82b5ffd
+#define ACD_LEVEL_TURBO_L1       0xa8295ffd
+#define ACD_LEVEL_NOM_L1         0x882b5ffd
+#define ACD_LEVEL_NOM            0xa82b5ffd
+#define ACD_LEVEL_SVS_L2         0xa82e5ffd
+#define ACD_LEVEL_SVS_L1         0xe0295ffd
+#define ACD_LEVEL_SVS_L0         0xc02c5ffd
+#define ACD_LEVEL_SVS            0xe8295ffd
+#define ACD_LEVEL_LOW_SVS_L2     0xc82b5ffd
+#define ACD_LEVEL_LOW_SVS_L1     0xe82e5ffd
+#define ACD_LEVEL_LOW_SVS_L0     0xe82e5ffd
 
 &msm_gpu {
 	/* Power Levels */
@@ -173,8 +170,6 @@
 				qcom,bus-freq = <3>;
 				qcom,bus-min = <2>;
 				qcom,bus-max = <5>;
-
-				qcom,acd-level = <ACD_LEVEL_LOW_SVS>;
 			};
 
 			/* LOW_SVS_D0 */
@@ -186,8 +181,6 @@
 				qcom,bus-freq = <2>;
 				qcom,bus-min = <1>;
 				qcom,bus-max = <2>;
-
-				qcom,acd-level = <ACD_LEVEL_LOW_SVS_D0>;
 			};
 
 			/* LOW_SVS_D1 */
@@ -199,8 +192,6 @@
 				qcom,bus-freq = <2>;
 				qcom,bus-min = <1>;
 				qcom,bus-max = <2>;
-
-				qcom,acd-level = <ACD_LEVEL_LOW_SVS_D1>;
 			};
 
 			/* LOW_SVS_D1_1 */
