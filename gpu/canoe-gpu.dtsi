@@ -136,7 +136,7 @@
 			"memnoc_clk", "ahb_clk", "hub_clk";
 
 
-		qcom,gmu-freq-table = <575000000 RPMH_REGULATOR_LEVEL_LOW_SVS>,
+		qcom,gmu-freq-table = <475000000 RPMH_REGULATOR_LEVEL_LOW_SVS_D1>,
 					<700000000 RPMH_REGULATOR_LEVEL_SVS>;
 		qcom,gmu-perf-ddr-bw = <MHZ_TO_KBPS(1555, 4)>;
 
