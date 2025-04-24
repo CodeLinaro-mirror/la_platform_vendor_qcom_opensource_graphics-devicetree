@@ -78,6 +78,9 @@
 		<MHZ_TO_KBPS(4780, 4)>, /*  TURBO_L3 index=10 */
 		<MHZ_TO_KBPS(5333, 4)>; /*  TURBO_L5 index=11 */
 
+	nvmem-cells = <&gpu_debug_bus_bin>;
+	nvmem-cell-names = "gpu_debug_bus_bin";
+
 	zap-shader {
 		memory-region = <&gpu_microcode_mem>;
 	};
