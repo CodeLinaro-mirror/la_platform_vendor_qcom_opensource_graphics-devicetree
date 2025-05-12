@@ -227,9 +227,10 @@ Optional Properties:
 
  nvmem-cells:
 				A phandle to the configuration data such as gpu speed bin, gpu gaming mode,
-				gpu model name provided by a nvmem device. If unspecified default values shall be used.
+				gpu model name, gpu_debug_bus_bin provided by a nvmem device. If unspecified
+				default values shall be used.
  nvmem-cell-names:
-				Should be "speed_bin", "gaming_bin", "gpu_model"
+				Should be "speed_bin", "gaming_bin", "gpu_model", "gpu_debug_bus_bin"
 
 GPU Quirks:
 - qcom,gpu-quirk-two-pass-use-wfi:
@@ -396,8 +397,8 @@ Example of A330 GPU in MSM8916:
 		/* GDSC oxili regulators */
 		vdd-supply = <&gdsc_oxili_gx>;
 
-		nvmem-cells = <&gpu_speed_bin>, <&gpu_gaming_bin>, <&gpu_model_bin>;
-		nvmem-cell-names = "speed_bin", "gaming_bin","gpu_model";
+		nvmem-cells = <&gpu_speed_bin>, <&gpu_gaming_bin>, <&gpu_model_bin>, <&gpu_debug_bus_bin>;
+		nvmem-cell-names = "speed_bin", "gaming_bin", "gpu_model", "gpu_debug_bus_bin";
 
 		/* IOMMU Data */
 		iommu = <&gfx_iommu>;
