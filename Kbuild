@@ -18,6 +18,10 @@ dtbo-y += gpu/canoe-gpu.dtbo \
 		gpu/canoe-v2-gpu.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_X1P42100), y)
+dtbo-y += gpu/x1p42100-gpu.dtbo
+endif
+
 ifeq ($(CONFIG_ARCH_KERA), y)
 dtbo-y += gpu/kera-gpu.dtbo
 endif
