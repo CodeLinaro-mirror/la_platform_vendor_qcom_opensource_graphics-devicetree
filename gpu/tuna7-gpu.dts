@@ -26,5 +26,5 @@
 
 &msm_gpu {
 	/delete-property/qcom,gpu-model;
-        qcom,gpu-model = "Adreno822";
+	qcom,gpu-model = "Adreno822";
 };
