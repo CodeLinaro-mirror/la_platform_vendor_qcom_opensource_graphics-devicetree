@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: BSD-3-Clause
 /*
- * Copyright (c) 2024-2025 Qualcomm Innovation Center, Inc. All rights reserved.
+ * Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
  */
 
 #define MHZ_TO_KBPS(mhz, w) ((mhz * 1000000 * w) / (1024))
@@ -149,5 +149,29 @@
 		qcom,ipc-core = <0x0 0x01100000 0x0 0x3c0000>;
 
 		qcom,qmp = <&aoss_qmp>;
+
+		hub_opp_table: hub_opp_table {
+			compatible = "operating-points-v2";
+
+			opp-400000000 {
+				opp-hz = /bits/ 64 <400000000>;
+				opp-level = <RPMH_REGULATOR_LEVEL_SVS_L1>;
+			};
+
+			opp-300000000 {
+				opp-hz = /bits/ 64 <300000000>;
+				opp-level = <RPMH_REGULATOR_LEVEL_SVS>;
+			};
+
+			opp-200000000 {
+				opp-hz = /bits/ 64 <200000000>;
+				opp-level = <RPMH_REGULATOR_LEVEL_LOW_SVS>;
+			};
+
+			opp-150000000 {
+				opp-hz = /bits/ 64 <150000000>;
+				opp-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
+			};
+		};
 	};
 };
