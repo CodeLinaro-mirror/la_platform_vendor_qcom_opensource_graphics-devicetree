@@ -7,30 +7,14 @@
 
 /* External feature codes */
 #define FC_UNKNOWN 0x0
-#define FC_AA 0x1
-#define FC_AB 0x2
-#define FC_AC 0x3
-#define FC_AD 0x4
-
-/* Internal feature codes */
-#define FC_Y0 0x00f1
-#define FC_Y1 0x00f2
 
 /* Pcodes */
 #define PCODE_UNKNOWN 0
-#define PCODE_0 1
-#define PCODE_1 2
-#define PCODE_2 3
-#define PCODE_3 4
-#define PCODE_4 5
-#define PCODE_5 6
-#define PCODE_6 7
-#define PCODE_7 8
 
 #define SKU_CODE(pcode, featurecode) ((pcode << 16) + featurecode)
 
 &msm_gpu {
-	compatible = "qcom,adreno-gpu-gen8-2-0", "qcom,kgsl-3d0";
+	compatible = "qcom,adreno-gpu-gen8-9-0", "qcom,kgsl-3d0";
 	status = "ok";
 	reg = <0x0 0x3d00000 0x0 0x40000>, <0x0 0x3d50000 0x0 0x10000>,
 		<0x0 0x3d61000 0x0 0x3000>, <0x0 0x3d9e000 0x0 0x2000>;
@@ -45,17 +29,13 @@
 	clock-names = "gcc_gpu_memnoc_gfx",
 			"gpu_cc_ahb",
 			"apb_pclk";
-	qcom,gpu-model = "Adreno840";
-
-	qcom,chipid = <0x44050a00>;
 
 	qcom,min-access-length = <32>;
 
 	qcom,ubwc-mode = <6>;
 
 	qcom,tzone-names = "gpuss-0", "gpuss-1", "gpuss-2", "gpuss-3",
-			"gpuss-4", "gpuss-5", "gpuss-6", "gpuss-7",
-			"gpuss-8", "gpuss-9", "gpuss-10";
+			"gpuss-4", "gpuss-5", "gpuss-6", "gpuss-7";
 
 	interconnects = <&gem_noc MASTER_GFX3D &mc_virt SLAVE_EBI1>;
 	interconnect-names = "gpu_icc_path";
@@ -75,57 +55,10 @@
 		<MHZ_TO_KBPS(3187, 4)>, /*       NOM index=7  */
 		<MHZ_TO_KBPS(3686, 4)>, /*     TURBO index=8  */
 		<MHZ_TO_KBPS(4224, 4)>, /*  TURBO_L1 index=9 */
-		<MHZ_TO_KBPS(4780, 4)>, /*  TURBO_L3 index=10 */
-		<MHZ_TO_KBPS(5333, 4)>; /*  TURBO_L5 index=11 */
-
-	nvmem-cells = <&gpu_debug_bus_bin>, <&gpu_speed_bin>;
-	nvmem-cell-names = "gpu_debug_bus_bin", "speed_bin";
+		<MHZ_TO_KBPS(4780, 4)>; /*  TURBO_L3 index=10 */
 
 	zap-shader {
 		memory-region = <&gpu_microcode_mem>;
-	};
-
-	qcom,gpu-mempools {
-		#address-cells = <1>;
-		#size-cells = <0>;
-		compatible = "qcom,gpu-mempools";
-
-		/* 4K Page Pool configuration */
-		qcom,gpu-mempool@0 {
-			reg = <0>;
-			qcom,mempool-page-size = <4096>;
-			qcom,mempool-reserved = <2048>;
-		};
-		/* 8K Page Pool configuration */
-		qcom,gpu-mempool@1 {
-			reg = <1>;
-			qcom,mempool-page-size = <8192>;
-			qcom,mempool-reserved = <1024>;
-		};
-		/* 64K Page Pool configuration */
-		qcom,gpu-mempool@2 {
-			reg = <2>;
-			qcom,mempool-page-size = <65536>;
-			qcom,mempool-reserved = <256>;
-		};
-		/* 128K Page Pool configuration */
-		qcom,gpu-mempool@3 {
-			reg = <3>;
-			qcom,mempool-page-size = <131072>;
-			qcom,mempool-reserved = <128>;
-		};
-		/* 256K Page Pool configuration */
-		qcom,gpu-mempool@4 {
-			reg = <4>;
-			qcom,mempool-page-size = <262144>;
-			qcom,mempool-reserved = <80>;
-		};
-		/* 1M Page Pool configuration */
-		qcom,gpu-mempool@5 {
-			reg = <5>;
-			qcom,mempool-page-size = <1048576>;
-			qcom,mempool-reserved = <32>;
-		};
 	};
 };
 
@@ -159,7 +92,7 @@
 		compatible = "qcom,gen8-gmu";
 
 		reg = <0x0 0x3d37000 0x0 0x68000>,
-		      <0x0 0x3d40000 0x0 0x10000>;
+			<0x0 0x3d40000 0x0 0x10000>;
 
 		reg-names = "gmu", "gmu_ao_blk_dec0";
 
@@ -170,6 +103,7 @@
 		power-domains = <&gpucc GPU_CC_CX_GDSC>,
 				<&gpucc GPU_CC_CX_GMU_GDSC>,
 				<&gxclkctl GX_CLKCTL_GX_GDSC>;
+
 		power-domain-names = "cx", "gmu_cx", "gx";
 
 		clocks = <&gpucc GPU_CC_CX_GMU_CLK>,
@@ -181,7 +115,6 @@
 		clock-names = "gmu_clk", "cxo_clk",
 			"memnoc_clk", "ahb_clk", "hub_clk";
 
-
 		qcom,gmu-freq-table = <475000000 RPMH_REGULATOR_LEVEL_LOW_SVS_D1>,
 					<700000000 RPMH_REGULATOR_LEVEL_SVS>;
 		qcom,gmu-perf-ddr-bw = <MHZ_TO_KBPS(1555, 4)>;
@@ -190,31 +123,5 @@
 		qcom,iommu-dma = "disabled";
 
 		qcom,ipc-core = <0x0 0x01100000 0x0 0x3c0000>;
-
-		qcom,qmp = <&aoss_qmp>;
-
-		hub_opp_table: hub_opp_table {
-			compatible = "operating-points-v2";
-
-			opp-400000000 {
-				opp-hz = /bits/ 64 <400000000>;
-				opp-level = <RPMH_REGULATOR_LEVEL_SVS_L1>;
-			};
-
-			opp-300000000 {
-				opp-hz = /bits/ 64 <300000000>;
-				opp-level = <RPMH_REGULATOR_LEVEL_SVS>;
-			};
-
-			opp-200000000 {
-				opp-hz = /bits/ 64 <200000000>;
-				opp-level = <RPMH_REGULATOR_LEVEL_LOW_SVS>;
-			};
-
-			opp-150000000 {
-				opp-hz = /bits/ 64 <150000000>;
-				opp-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
-			};
-		};
 	};
 };
