@@ -93,7 +93,7 @@
 
 				qcom,bus-freq = <5>;
 				qcom,bus-min = <5>;
-				qcom,bus-max = <9>;
+				qcom,bus-max = <8>;
 
 				qcom,acd-level = <ACD_LEVEL_SVS_L1>;
 			};
@@ -321,7 +321,7 @@
 
 				qcom,bus-freq = <5>;
 				qcom,bus-min = <5>;
-				qcom,bus-max = <9>;
+				qcom,bus-max = <8>;
 
 				qcom,acd-level = <ACD_LEVEL_SVS_L1>;
 			};
@@ -562,7 +562,7 @@
 
 				qcom,bus-freq = <5>;
 				qcom,bus-min = <5>;
-				qcom,bus-max = <9>;
+				qcom,bus-max = <8>;
 
 				qcom,acd-level = <ACD_LEVEL_SVS_L1>;
 			};
@@ -803,7 +803,7 @@
 
 				qcom,bus-freq = <5>;
 				qcom,bus-min = <5>;
-				qcom,bus-max = <9>;
+				qcom,bus-max = <8>;
 
 				qcom,acd-level = <ACD_LEVEL_SVS_L1>;
 			};
