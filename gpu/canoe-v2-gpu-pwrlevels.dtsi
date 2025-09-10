@@ -42,7 +42,6 @@
 				reg = <0>;
 				qcom,gpu-freq = <1050000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO_L1>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <11>;
 				qcom,bus-min = <11>;
@@ -56,7 +55,6 @@
 				reg = <1>;
 				qcom,gpu-freq = <1000000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <9>;
 				qcom,bus-min = <8>;
@@ -70,7 +68,6 @@
 				reg = <2>;
 				qcom,gpu-freq = <902000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_NOM>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <7>;
 				qcom,bus-min = <6>;
@@ -84,7 +81,6 @@
 				reg = <3>;
 				qcom,gpu-freq = <826000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L2>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <7>;
 				qcom,bus-min = <6>;
@@ -98,7 +94,6 @@
 				reg = <4>;
 				qcom,gpu-freq = <726000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L1>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <5>;
 				qcom,bus-min = <5>;
@@ -112,7 +107,6 @@
 				reg = <5>;
 				qcom,gpu-freq = <646000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L0>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <5>;
 				qcom,bus-min = <3>;
@@ -126,7 +120,6 @@
 				reg = <6>;
 				qcom,gpu-freq = <578000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <3>;
 				qcom,bus-min = <3>;
@@ -140,7 +133,6 @@
 				reg = <7>;
 				qcom,gpu-freq = <500000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_L1>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <3>;
 				qcom,bus-min = <2>;
@@ -154,7 +146,6 @@
 				reg = <8>;
 				qcom,gpu-freq = <461000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_L0>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <3>;
 				qcom,bus-min = <2>;
@@ -168,7 +159,6 @@
 				reg = <9>;
 				qcom,gpu-freq = <422000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <3>;
 				qcom,bus-min = <2>;
@@ -182,7 +172,6 @@
 				reg = <10>;
 				qcom,gpu-freq = <382000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D0>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <2>;
 				qcom,bus-min = <1>;
@@ -196,7 +185,6 @@
 				reg = <11>;
 				qcom,gpu-freq = <342000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <2>;
 				qcom,bus-min = <1>;
@@ -210,7 +198,6 @@
 				reg = <12>;
 				qcom,gpu-freq = <282000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1_1>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <2>;
 				qcom,bus-min = <1>;
@@ -224,7 +211,6 @@
 				reg = <13>;
 				qcom,gpu-freq = <222000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D2>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
@@ -236,7 +222,6 @@
 				reg = <14>;
 				qcom,gpu-freq = <191000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D2_1>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
@@ -248,7 +233,6 @@
 				reg = <15>;
 				qcom,gpu-freq = <160000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D3>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
@@ -268,7 +252,6 @@
 				reg = <0>;
 				qcom,gpu-freq = <1200000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO_L3>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <11>;
 				qcom,bus-min = <11>;
@@ -282,7 +265,6 @@
 				reg = <1>;
 				qcom,gpu-freq = <1100000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO_L2>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <11>;
 				qcom,bus-min = <10>;
@@ -296,7 +278,6 @@
 				reg = <2>;
 				qcom,gpu-freq = <1050000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO_L1>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <9>;
 				qcom,bus-min = <8>;
@@ -310,7 +291,6 @@
 				reg = <3>;
 				qcom,gpu-freq = <1000000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <9>;
 				qcom,bus-min = <8>;
@@ -324,7 +304,6 @@
 				reg = <4>;
 				qcom,gpu-freq = <902000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_NOM>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <7>;
 				qcom,bus-min = <6>;
@@ -338,7 +317,6 @@
 				reg = <5>;
 				qcom,gpu-freq = <826000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L2>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <7>;
 				qcom,bus-min = <6>;
@@ -352,7 +330,6 @@
 				reg = <6>;
 				qcom,gpu-freq = <726000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L1>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <5>;
 				qcom,bus-min = <5>;
@@ -366,7 +343,6 @@
 				reg = <7>;
 				qcom,gpu-freq = <646000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L0>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <5>;
 				qcom,bus-min = <3>;
@@ -380,7 +356,6 @@
 				reg = <8>;
 				qcom,gpu-freq = <578000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <3>;
 				qcom,bus-min = <3>;
@@ -394,7 +369,6 @@
 				reg = <9>;
 				qcom,gpu-freq = <500000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_L1>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <3>;
 				qcom,bus-min = <2>;
@@ -408,7 +382,6 @@
 				reg = <10>;
 				qcom,gpu-freq = <461000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_L0>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <3>;
 				qcom,bus-min = <2>;
@@ -422,7 +395,6 @@
 				reg = <11>;
 				qcom,gpu-freq = <422000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <3>;
 				qcom,bus-min = <2>;
@@ -436,7 +408,6 @@
 				reg = <12>;
 				qcom,gpu-freq = <382000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D0>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <2>;
 				qcom,bus-min = <1>;
@@ -450,7 +421,6 @@
 				reg = <13>;
 				qcom,gpu-freq = <342000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <2>;
 				qcom,bus-min = <1>;
@@ -464,7 +434,6 @@
 				reg = <14>;
 				qcom,gpu-freq = <282000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1_1>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <2>;
 				qcom,bus-min = <1>;
@@ -478,7 +447,6 @@
 				reg = <15>;
 				qcom,gpu-freq = <222000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D2>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
@@ -490,7 +458,6 @@
 				reg = <16>;
 				qcom,gpu-freq = <191000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D2_1>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
@@ -502,7 +469,6 @@
 				reg = <17>;
 				qcom,gpu-freq = <160000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D3>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
@@ -522,7 +488,6 @@
 				reg = <0>;
 				qcom,gpu-freq = <1300000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO_L4>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <11>;
 				qcom,bus-min = <11>;
@@ -536,7 +501,6 @@
 				reg = <1>;
 				qcom,gpu-freq = <1200000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO_L3>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <11>;
 				qcom,bus-min = <10>;
@@ -550,7 +514,6 @@
 				reg = <2>;
 				qcom,gpu-freq = <1100000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO_L2>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <11>;
 				qcom,bus-min = <10>;
@@ -564,7 +527,6 @@
 				reg = <3>;
 				qcom,gpu-freq = <1050000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO_L1>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <9>;
 				qcom,bus-min = <8>;
@@ -578,7 +540,6 @@
 				reg = <4>;
 				qcom,gpu-freq = <1000000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <9>;
 				qcom,bus-min = <8>;
@@ -592,7 +553,6 @@
 				reg = <5>;
 				qcom,gpu-freq = <902000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_NOM>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <7>;
 				qcom,bus-min = <6>;
@@ -606,7 +566,6 @@
 				reg = <6>;
 				qcom,gpu-freq = <826000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L2>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <7>;
 				qcom,bus-min = <6>;
@@ -620,7 +579,6 @@
 				reg = <7>;
 				qcom,gpu-freq = <726000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L1>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <5>;
 				qcom,bus-min = <5>;
@@ -634,7 +592,6 @@
 				reg = <8>;
 				qcom,gpu-freq = <646000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L0>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <5>;
 				qcom,bus-min = <3>;
@@ -648,7 +605,6 @@
 				reg = <9>;
 				qcom,gpu-freq = <578000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <3>;
 				qcom,bus-min = <3>;
@@ -662,7 +618,6 @@
 				reg = <10>;
 				qcom,gpu-freq = <500000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_L1>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <3>;
 				qcom,bus-min = <2>;
@@ -676,7 +631,6 @@
 				reg = <11>;
 				qcom,gpu-freq = <461000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_L0>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <3>;
 				qcom,bus-min = <2>;
@@ -690,7 +644,6 @@
 				reg = <12>;
 				qcom,gpu-freq = <422000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <3>;
 				qcom,bus-min = <2>;
@@ -704,7 +657,6 @@
 				reg = <13>;
 				qcom,gpu-freq = <382000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D0>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <2>;
 				qcom,bus-min = <1>;
@@ -718,7 +670,6 @@
 				reg = <14>;
 				qcom,gpu-freq = <342000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <2>;
 				qcom,bus-min = <1>;
@@ -732,7 +683,6 @@
 				reg = <15>;
 				qcom,gpu-freq = <282000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1_1>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <2>;
 				qcom,bus-min = <1>;
@@ -746,7 +696,6 @@
 				reg = <16>;
 				qcom,gpu-freq = <222000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D2>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
@@ -758,7 +707,6 @@
 				reg = <17>;
 				qcom,gpu-freq = <191000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D2_1>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
@@ -770,7 +718,6 @@
 				reg = <18>;
 				qcom,gpu-freq = <160000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D3>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
@@ -790,7 +737,6 @@
 				reg = <0>;
 				qcom,gpu-freq = <1300000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO_L4>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <11>;
 				qcom,bus-min = <11>;
@@ -804,7 +750,6 @@
 				reg = <1>;
 				qcom,gpu-freq = <1200000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO_L3>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <11>;
 				qcom,bus-min = <10>;
@@ -818,7 +763,6 @@
 				reg = <2>;
 				qcom,gpu-freq = <1100000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO_L2>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <11>;
 				qcom,bus-min = <10>;
@@ -832,7 +776,6 @@
 				reg = <3>;
 				qcom,gpu-freq = <1050000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO_L1>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <9>;
 				qcom,bus-min = <8>;
@@ -846,7 +789,6 @@
 				reg = <4>;
 				qcom,gpu-freq = <1000000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <9>;
 				qcom,bus-min = <8>;
@@ -860,7 +802,6 @@
 				reg = <5>;
 				qcom,gpu-freq = <902000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_NOM>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <7>;
 				qcom,bus-min = <6>;
@@ -874,7 +815,6 @@
 				reg = <6>;
 				qcom,gpu-freq = <826000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L2>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <7>;
 				qcom,bus-min = <6>;
@@ -888,7 +828,6 @@
 				reg = <7>;
 				qcom,gpu-freq = <726000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L1>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <5>;
 				qcom,bus-min = <5>;
@@ -902,7 +841,6 @@
 				reg = <8>;
 				qcom,gpu-freq = <646000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L0>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <5>;
 				qcom,bus-min = <3>;
@@ -916,7 +854,6 @@
 				reg = <9>;
 				qcom,gpu-freq = <578000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <3>;
 				qcom,bus-min = <3>;
@@ -930,7 +867,6 @@
 				reg = <10>;
 				qcom,gpu-freq = <500000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_L1>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <3>;
 				qcom,bus-min = <2>;
@@ -944,7 +880,6 @@
 				reg = <11>;
 				qcom,gpu-freq = <461000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_L0>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <3>;
 				qcom,bus-min = <2>;
@@ -958,7 +893,6 @@
 				reg = <12>;
 				qcom,gpu-freq = <422000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <3>;
 				qcom,bus-min = <2>;
@@ -972,7 +906,6 @@
 				reg = <13>;
 				qcom,gpu-freq = <382000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D0>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <2>;
 				qcom,bus-min = <1>;
@@ -986,7 +919,6 @@
 				reg = <14>;
 				qcom,gpu-freq = <342000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <2>;
 				qcom,bus-min = <1>;
@@ -1000,7 +932,6 @@
 				reg = <15>;
 				qcom,gpu-freq = <282000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1_1>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <2>;
 				qcom,bus-min = <1>;
@@ -1014,7 +945,6 @@
 				reg = <16>;
 				qcom,gpu-freq = <222000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D2>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
@@ -1026,7 +956,6 @@
 				reg = <17>;
 				qcom,gpu-freq = <191000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D2_1>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
@@ -1038,7 +967,6 @@
 				reg = <18>;
 				qcom,gpu-freq = <160000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D3>;
-				qcom,cx-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
