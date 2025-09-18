@@ -123,5 +123,7 @@
 		qcom,iommu-dma = "disabled";
 
 		qcom,ipc-core = <0x0 0x01100000 0x0 0x3c0000>;
+
+		qcom,qmp = <&aoss_qmp>;
 	};
 };
