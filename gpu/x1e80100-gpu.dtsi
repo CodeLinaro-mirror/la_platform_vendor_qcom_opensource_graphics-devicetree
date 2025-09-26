@@ -30,7 +30,7 @@
 
 	qcom,gpu-model = "Adreno X1-85";
 
-	qcom,chipid = <0x43050c00>;
+	qcom,chipid = <0x43050c01>;
 
 	qcom,min-access-length = <32>;
 
