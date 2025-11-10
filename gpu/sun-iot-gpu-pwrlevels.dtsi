@@ -20,13 +20,12 @@
 #define ACD_LEVEL_LOW_SVS_D2  0xe82f5ffd
 
 &msm_gpu {
+	qcom,initial-pwrlevel = <12>;
+
 	/* Power levels */
 	qcom,gpu-pwrlevels {
 		#address-cells = <1>;
 		#size-cells = <0>;
-
-		qcom,initial-pwrlevel = <12>;
-		qcom,speed-bin = <0xe8>;
 
 		/* TURBO_L3 */
 		qcom,gpu-pwrlevel@0 {
