@@ -27,6 +27,9 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 
+		qcom,initial-pwrlevel = <12>;
+		com,speed-bin = <0xe8>;
+
 		/* TURBO_L3 */
 		qcom,gpu-pwrlevel@0 {
 			reg = <0>;
