@@ -44,6 +44,10 @@ dtbo-y += gpu/khaje-gpu.dtbo \
 		gpu/khajeg-gpu.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_CHORA), y)
+dtbo-y += gpu/chora-gpu.dtbo
+endif
+
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
 clean-files    := *.dtb *.dtbo
