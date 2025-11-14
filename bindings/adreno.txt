@@ -21,6 +21,7 @@ Required properties:
 			Must include "qcom,adreno-gpu-gen7-17-0" for Kera target.
 			Must include "qcom,adreno-gpu-gen8-6-0" for Tuna target.
 			Must include "qcom,adreno-gpu-gen8-9-0" for Alor target.
+			Must include "qcom,adreno-gpu-gen8-17-0" for Chora target.
 - reg:			Specifies the list of register regions for the device.
 - reg-names:		Resource names used for the register regions specified
 			in reg.
