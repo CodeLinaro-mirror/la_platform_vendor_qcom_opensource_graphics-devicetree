@@ -43,6 +43,11 @@
 
 	qcom,ubwc-mode = <6>;
 
+	qcom,tzone-names = "gpu-0-0", "gpu-0-1", "gpu-0-2",
+			"gpu-1-0", "gpu-1-1", "gpu-1-2",
+			"gpu-2-0", "gpu-2-1", "gpu-2-2",
+			"gpuss-0", "gpuss-1";
+
 	interconnects = <&gem_noc MASTER_GFX3D &mc_virt SLAVE_EBI1>;
 	interconnect-names = "gpu_icc_path";
 
