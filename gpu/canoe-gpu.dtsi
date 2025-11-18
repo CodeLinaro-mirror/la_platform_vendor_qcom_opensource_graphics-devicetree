@@ -34,9 +34,10 @@
 	status = "ok";
 	reg = <0x0 0x3d00000 0x0 0x40000>, <0x0 0x3d50000 0x0 0x10000>,
 		<0x0 0x3d61000 0x0 0x3000>, <0x0 0x3d9e000 0x0 0x2000>,
-		<0x0 0x11100000 0x0 0x80000>;
+		<0x0 0x11100000 0x0 0x80000>, <0x0 0x10048000 0x0 0x8000>,
+		<0x0 0x11305000 0x0 0x1000>;
 	reg-names = "kgsl_3d0_reg_memory", "rscc", "cx_dbgc", "cx_misc",
-		"qdss_gfx";
+		"qdss_gfx", "qdss_etr", "qdss_tmc";
 
 	interrupts = <0 300 IRQ_TYPE_LEVEL_HIGH>, <0 80 IRQ_TYPE_LEVEL_HIGH>;
 	interrupt-names = "kgsl_3d0_irq", "cx_host_irq";
@@ -54,6 +55,8 @@
 	qcom,min-access-length = <32>;
 
 	qcom,ubwc-mode = <6>;
+
+	qcom,gpu-qdss-stm = <0x16000000 0x40000>; /* base addr, size */
 
 	qcom,tzone-names = "gpuss-0", "gpuss-1", "gpuss-2", "gpuss-3",
 			"gpuss-4", "gpuss-5", "gpuss-6", "gpuss-7",
@@ -185,8 +188,13 @@
 
 
 		qcom,gmu-freq-table = <475000000 RPMH_REGULATOR_LEVEL_LOW_SVS_D1>,
-					<700000000 RPMH_REGULATOR_LEVEL_SVS>;
-		qcom,gmu-perf-ddr-bw = <MHZ_TO_KBPS(1555, 4)>;
+					<575000000 RPMH_REGULATOR_LEVEL_LOW_SVS>,
+					<700000000 RPMH_REGULATOR_LEVEL_SVS>,
+					<750000000 RPMH_REGULATOR_LEVEL_NOM>;
+		qcom,gmu-perf-ddr-bw = <MHZ_TO_KBPS(1353, 4)>,
+					<MHZ_TO_KBPS(1555, 4)>,
+					<MHZ_TO_KBPS(2736, 4)>,
+					<MHZ_TO_KBPS(0, 4)>;
 
 		iommus = <&kgsl_smmu 0x5 0x000>;
 		qcom,iommu-dma = "disabled";
@@ -216,6 +224,60 @@
 			opp-150000000 {
 				opp-hz = /bits/ 64 <150000000>;
 				opp-level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
+			};
+		};
+	};
+
+	coresight_cx_dgbc: qcom,gpu-coresight-cx {
+		compatible = "qcom,gpu-coresight-cx";
+
+		coresight-name = "coresight-gfx-cx";
+
+		out-ports {
+			port {
+				cx_dbgc_out_funnel_gfx: endpoint {
+					remote-endpoint =
+					  <&funnel_gfx_in_cx_dbgc>;
+				};
+			};
+		};
+	};
+
+	coresight_gx_dgbc: qcom,gpu-coresight-gx {
+		compatible = "qcom,gpu-coresight-gx";
+
+		coresight-name = "coresight-gfx";
+
+		out-ports {
+			port {
+				gx_dbgc_out_funnel_gfx: endpoint {
+					remote-endpoint =
+					  <&funnel_gfx_in_gx_dbgc>;
+				};
+			};
+		};
+	};
+};
+
+&funnel_gfx {
+	status = "ok";
+	in-ports {
+		#address-cells = <1>;
+		#size-cells = <0>;
+
+		port@0 {
+			reg = <0>;
+			funnel_gfx_in_gx_dbgc: endpoint {
+			remote-endpoint =
+				<&gx_dbgc_out_funnel_gfx>;
+			};
+		};
+
+		port@1 {
+			reg = <1>;
+			funnel_gfx_in_cx_dbgc: endpoint {
+			remote-endpoint =
+				<&cx_dbgc_out_funnel_gfx>;
 			};
 		};
 	};
