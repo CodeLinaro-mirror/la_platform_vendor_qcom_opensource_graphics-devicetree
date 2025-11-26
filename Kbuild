@@ -17,7 +17,8 @@ ifeq ($(CONFIG_ARCH_CANOE), y)
 dtbo-y += gpu/canoe-gpu.dtbo \
 		gpu/canoe-v2-gpu.dtbo \
 		gpu/canoep-sg-gpu.dtbo \
-		gpu/canoep-sg-v2-gpu.dtbo
+		gpu/canoep-sg-v2-gpu.dtbo \
+		gpu/whale-gpu.dtbo
 endif
 
 ifeq ($(CONFIG_ARCH_X1P42100), y)
