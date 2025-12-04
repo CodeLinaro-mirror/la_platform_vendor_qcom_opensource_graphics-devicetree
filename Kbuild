@@ -17,7 +17,8 @@ ifeq ($(CONFIG_ARCH_CANOE), y)
 dtbo-y += gpu/canoe-gpu.dtbo \
 		gpu/canoe-v2-gpu.dtbo \
 		gpu/canoep-sg-gpu.dtbo \
-		gpu/canoep-sg-v2-gpu.dtbo
+		gpu/canoep-sg-v2-gpu.dtbo \
+		gpu/whale-gpu.dtbo
 endif
 
 ifeq ($(CONFIG_ARCH_X1P42100), y)
@@ -30,6 +31,17 @@ endif
 
 ifeq ($(CONFIG_ARCH_ALOR), y)
 dtbo-y += gpu/alor-gpu.dtbo
+endif
+
+ifeq ($(CONFIG_ARCH_BENGAL), y)
+dtbo-y += gpu/bengal-gpu.dtbo
+endif
+
+ifeq ($(CONFIG_ARCH_KHAJE), y)
+dtbo-y += gpu/khaje-gpu.dtbo \
+		gpu/khajep-gpu.dtbo \
+		gpu/khajeq-gpu.dtbo \
+		gpu/khajeg-gpu.dtbo
 endif
 
 always-y    := $(dtb-y) $(dtbo-y)
