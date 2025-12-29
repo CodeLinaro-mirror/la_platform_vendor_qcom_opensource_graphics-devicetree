@@ -56,6 +56,10 @@ ifeq ($(CONFIG_ARCH_MALABAR), y)
 dtbo-y += gpu/malabar-gpu.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_LAHAINA), y)
+dtbo-y += gpu/lahaina-gpu.dtbo
+endif
+
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
 clean-files    := *.dtb *.dtbo
