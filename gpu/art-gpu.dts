@@ -21,6 +21,6 @@
 / {
 	model = "Qualcomm Technologies, Inc. Art SoC";
 	compatible = "qcom,art";
-	qcom,msm-id = <0x2c3 0x10000>, <0x2c4 0x10000>;
+	qcom,msm-id = <0x2c3 0x10000>, <0x2c4 0x10000>, <0x2f3 0x10000>, <0x2f8 0x10000>;
 	qcom,board-id = <0 0>;
 };
