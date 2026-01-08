@@ -3,6 +3,16 @@
  * Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
  */
 
+#define ACD_LEVEL_TURBO_L4       0x88285FFD
+#define ACD_LEVEL_TURBO_L3       0x882A5FFD
+#define ACD_LEVEL_TURBO_L1       0x882B5FFD
+#define ACD_LEVEL_TURBO          0xA82B5FFD
+#define ACD_LEVEL_NOM_L1         0xA82B5FFD
+#define ACD_LEVEL_NOM            0xA82C5FFD
+#define ACD_LEVEL_SVS_L2         0x882F5FFD
+#define ACD_LEVEL_SVS_L1         0XC02A5FFD
+#define ACD_LEVEL_SVS            0XC02C5FFD
+
 &msm_gpu {
 	/* Power Levels */
 	qcom,gpu-pwrlevel-bins {
@@ -28,6 +38,8 @@
 				qcom,bus-freq = <11>;
 				qcom,bus-min = <11>;
 				qcom,bus-max = <11>;
+
+				qcom,acd-level = <ACD_LEVEL_TURBO_L4>;
 			};
 
 			/* TURBO_L3 */
@@ -39,6 +51,8 @@
 				qcom,bus-freq = <11>;
 				qcom,bus-min = <11>;
 				qcom,bus-max = <11>;
+
+				qcom,acd-level = <ACD_LEVEL_TURBO_L3>;
 			};
 
 			/* TURBO_L1 */
@@ -50,6 +64,8 @@
 				qcom,bus-freq = <9>;
 				qcom,bus-min = <8>;
 				qcom,bus-max = <10>;
+
+				qcom,acd-level = <ACD_LEVEL_TURBO_L1>;
 			};
 
 			/* TURBO */
@@ -61,6 +77,8 @@
 				qcom,bus-freq = <9>;
 				qcom,bus-min = <8>;
 				qcom,bus-max = <10>;
+
+				qcom,acd-level = <ACD_LEVEL_TURBO>;
 			};
 
 			/* NOM_L1 */
@@ -72,6 +90,8 @@
 				qcom,bus-freq = <7>;
 				qcom,bus-min = <6>;
 				qcom,bus-max = <9>;
+
+				qcom,acd-level = <ACD_LEVEL_NOM_L1>;
 			};
 
 			/* NOM */
@@ -83,6 +103,8 @@
 				qcom,bus-freq = <7>;
 				qcom,bus-min = <6>;
 				qcom,bus-max = <9>;
+
+				qcom,acd-level = <ACD_LEVEL_NOM>;
 			};
 
 			/* SVS_L2 */
@@ -94,6 +116,8 @@
 				qcom,bus-freq = <7>;
 				qcom,bus-min = <6>;
 				qcom,bus-max = <9>;
+
+				qcom,acd-level = <ACD_LEVEL_SVS_L2>;
 			};
 
 			/* SVS_L1 */
@@ -105,6 +129,8 @@
 				qcom,bus-freq = <5>;
 				qcom,bus-min = <5>;
 				qcom,bus-max = <8>;
+
+				qcom,acd-level = <ACD_LEVEL_SVS_L1>;
 			};
 
 			/* SVS */
@@ -116,6 +142,8 @@
 				qcom,bus-freq = <3>;
 				qcom,bus-min = <3>;
 				qcom,bus-max = <7>;
+
+				qcom,acd-level = <ACD_LEVEL_SVS>;
 			};
 
 			/* LOW_SVS */
@@ -179,6 +207,8 @@
 				qcom,bus-freq = <11>;
 				qcom,bus-min = <11>;
 				qcom,bus-max = <11>;
+
+				qcom,acd-level = <ACD_LEVEL_TURBO_L4>;
 			};
 
 			/* TURBO_L3 */
@@ -190,6 +220,8 @@
 				qcom,bus-freq = <11>;
 				qcom,bus-min = <11>;
 				qcom,bus-max = <11>;
+
+				qcom,acd-level = <ACD_LEVEL_TURBO_L3>;
 			};
 
 			/* TURBO_L1 */
@@ -201,6 +233,8 @@
 				qcom,bus-freq = <9>;
 				qcom,bus-min = <8>;
 				qcom,bus-max = <10>;
+
+				qcom,acd-level = <ACD_LEVEL_TURBO_L1>;
 			};
 
 			/* TURBO */
@@ -212,6 +246,8 @@
 				qcom,bus-freq = <9>;
 				qcom,bus-min = <8>;
 				qcom,bus-max = <10>;
+
+				qcom,acd-level = <ACD_LEVEL_TURBO>;
 			};
 
 			/* NOM_L1 */
@@ -223,6 +259,8 @@
 				qcom,bus-freq = <7>;
 				qcom,bus-min = <6>;
 				qcom,bus-max = <9>;
+
+				qcom,acd-level = <ACD_LEVEL_NOM_L1>;
 			};
 
 			/* NOM */
@@ -234,6 +272,8 @@
 				qcom,bus-freq = <7>;
 				qcom,bus-min = <6>;
 				qcom,bus-max = <9>;
+
+				qcom,acd-level = <ACD_LEVEL_NOM>;
 			};
 
 			/* SVS_L2 */
@@ -245,6 +285,8 @@
 				qcom,bus-freq = <7>;
 				qcom,bus-min = <6>;
 				qcom,bus-max = <9>;
+
+				qcom,acd-level = <ACD_LEVEL_SVS_L2>;
 			};
 
 			/* SVS_L1 */
@@ -256,6 +298,8 @@
 				qcom,bus-freq = <5>;
 				qcom,bus-min = <5>;
 				qcom,bus-max = <8>;
+
+				qcom,acd-level = <ACD_LEVEL_SVS_L1>;
 			};
 
 			/* SVS */
@@ -267,6 +311,8 @@
 				qcom,bus-freq = <3>;
 				qcom,bus-min = <3>;
 				qcom,bus-max = <7>;
+
+				qcom,acd-level = <ACD_LEVEL_SVS>;
 			};
 
 			/* LOW_SVS */
