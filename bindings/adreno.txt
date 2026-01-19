@@ -82,6 +82,8 @@ GDSC Oxili Regulators:
 - regulator-names:		List of regulator name strings sorted in power-on order
 - vddcx-supply:			Phandle for vddcx regulator device node.
 - vdd-supply:			Phandle for vdd regulator device node.
+- vdd-parent-supply:		Phandle for vdd parent regulator device node.
+- vdd-parent-min-corner:	Minimum voltage corner value to set vdd parent supply.
 
 Power Domains:
 - power-domains:		List of PM domain specifiers that reference each power-domain
