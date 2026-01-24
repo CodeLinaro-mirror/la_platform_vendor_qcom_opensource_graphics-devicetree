@@ -39,14 +39,18 @@
 		<&gcc GCC_BIMC_GPU_AXI_CLK>,
 		<&gcc GCC_GPU_MEMNOC_GFX_CLK>,
 		<&gpucc GPU_CC_CX_GMU_CLK>,
-		<&gcc GCC_GPU_MEMNOC_GFX_CLK>;
+		<&gcc GCC_GPU_MEMNOC_GFX_CLK>,
+		<&gpucc GPU_CC_AHB_CLK>,
+		<&gpucc GPU_CC_HLOS1_VOTE_GPU_SMMU_CLK>;
 
 	clock-names = "core_clk",
 		"rbbmtimer_clk",
 		"iface_clk",
 		"mem_clk",
 		"gmu_clk",
-		"gcc_gpu_memnoc_gfx";
+		"gcc_gpu_memnoc_gfx",
+		"gpu_cc_ahb",
+		"gpu_cc_hlos1_vote_gpu_smmu";
 
 	qcom,min-access-length = <32>;
 
@@ -136,13 +140,13 @@
 
 		gfx3d_user: gfx3d_user {
 			compatible = "qcom,smmu-kgsl-cb";
-			iommus = <&kgsl_smmu 0x0 0x000>;
+			iommus = <&kgsl_smmu 0x0 0x401>;
 			qcom,iommu-dma = "disabled";
 		};
 
 		gfx3d_secure: gfx3d_secure {
 			compatible = "qcom,smmu-kgsl-cb";
-			iommus = <&kgsl_smmu 0x2 0x000>;
+			iommus = <&kgsl_smmu 0x2 0x400>;
 			qcom,iommu-dma = "disabled";
 		};
 	};
