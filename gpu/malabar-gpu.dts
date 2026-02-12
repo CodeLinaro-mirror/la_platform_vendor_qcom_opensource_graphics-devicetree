@@ -20,5 +20,5 @@
 		model = "Qualcomm Technologies, Inc. Malabar";
 		compatible = "qcom,malabar";
 		qcom,msm-id = <0x2F5 0x10000>, <0x2DD 0x10000>;
-		qcom,board-id = <0 0>;
+		qcom,board-id = <0 0>, <0 0x600>;
 };
