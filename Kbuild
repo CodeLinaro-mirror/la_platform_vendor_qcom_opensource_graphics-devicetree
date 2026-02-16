@@ -44,15 +44,16 @@ dtbo-y += gpu/khaje-gpu.dtbo \
 		gpu/khajeg-gpu.dtbo
 endif
 
-ifeq ($(CONFIG_ARCH_BENGAL), y)
-dtbo-y += gpu/bengal-gpu.dtbo
+ifeq ($(CONFIG_ARCH_CHORA), y)
+dtbo-y += gpu/chora-gpu.dtbo
 endif
 
-ifeq ($(CONFIG_ARCH_KHAJE), y)
-dtbo-y += gpu/khaje-gpu.dtbo \
-		gpu/khajep-gpu.dtbo \
-		gpu/khajeq-gpu.dtbo \
-		gpu/khajeg-gpu.dtbo
+ifeq ($(CONFIG_ARCH_MALABAR), y)
+dtbo-y += gpu/malabar-gpu.dtbo
+endif
+
+ifeq ($(CONFIG_ARCH_YUPIK), y)
+dtbo-y += gpu/yupik-gpu.dtbo
 endif
 
 always-y    := $(dtb-y) $(dtbo-y)
