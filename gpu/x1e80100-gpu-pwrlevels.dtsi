@@ -395,8 +395,8 @@
 			qcom,initial-pwrlevel = <8>;
 
 			/* Turbo L3 */
-			qcom,gpu-pwrlevel@2 {
-				reg = <2>;
+			qcom,gpu-pwrlevel@0 {
+				reg = <0>;
 				qcom,gpu-freq = <1250000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO_L3>;
 
@@ -408,8 +408,8 @@
 			};
 
 			/* Turbo L2 */
-			qcom,gpu-pwrlevel@3 {
-				reg = <3>;
+			qcom,gpu-pwrlevel@1 {
+				reg = <1>;
 				qcom,gpu-freq = <1175000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO_L2>;
 
@@ -421,8 +421,8 @@
 			};
 
 			/* Turbo L1 */
-			qcom,gpu-pwrlevel@4 {
-				reg = <4>;
+			qcom,gpu-pwrlevel@2 {
+				reg = <2>;
 				qcom,gpu-freq = <1100000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO_L1>;
 
@@ -434,8 +434,8 @@
 			};
 
 			/* Turbo */
-			qcom,gpu-pwrlevel@5 {
-				reg = <5>;
+			qcom,gpu-pwrlevel@3 {
+				reg = <3>;
 				qcom,gpu-freq = <1000000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO>;
 
@@ -447,8 +447,8 @@
 			};
 
 			/* Nom_L1 */
-			qcom,gpu-pwrlevel@6 {
-				reg = <6>;
+			qcom,gpu-pwrlevel@4 {
+				reg = <4>;
 				qcom,gpu-freq = <925000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_NOM_L1>;
 
@@ -460,8 +460,8 @@
 			};
 
 			/* Nom */
-			qcom,gpu-pwrlevel@7 {
-				reg = <7>;
+			qcom,gpu-pwrlevel@5 {
+				reg = <5>;
 				qcom,gpu-freq = <800000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_NOM>;
 
@@ -473,8 +473,8 @@
 			};
 
 			/* SVS_L2 */
-			qcom,gpu-pwrlevel@8 {
-				reg = <8>;
+			qcom,gpu-pwrlevel@6 {
+				reg = <6>;
 				qcom,gpu-freq = <744000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L2>;
 
@@ -486,8 +486,8 @@
 			};
 
 			/* SVS_L1 */
-			qcom,gpu-pwrlevel@9 {
-				reg = <9>;
+			qcom,gpu-pwrlevel@7 {
+				reg = <7>;
 				qcom,gpu-freq = <687000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L1>;
 
@@ -499,8 +499,8 @@
 			};
 
 			/* SVS */
-			qcom,gpu-pwrlevel@10 {
-				reg = <10>;
+			qcom,gpu-pwrlevel@8 {
+				reg = <8>;
 				qcom,gpu-freq = <550000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS>;
 
@@ -512,8 +512,8 @@
 			};
 
 			/* Low_SVS */
-			qcom,gpu-pwrlevel@11 {
-				reg = <11>;
+			qcom,gpu-pwrlevel@9 {
+				reg = <9>;
 				qcom,gpu-freq = <390000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS>;
 
@@ -525,8 +525,8 @@
 			};
 
 			/* Low_SVS_D1 */
-			qcom,gpu-pwrlevel@12 {
-				reg = <12>;
+			qcom,gpu-pwrlevel@10 {
+				reg = <10>;
 				qcom,gpu-freq = <300000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
@@ -548,8 +548,8 @@
 			qcom,initial-pwrlevel = <8>;
 
 			/* Turbo L1 */
-			qcom,gpu-pwrlevel@4 {
-				reg = <4>;
+			qcom,gpu-pwrlevel@0 {
+				reg = <0>;
 				qcom,gpu-freq = <1100000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO_L1>;
 
@@ -561,8 +561,8 @@
 			};
 
 			/* Turbo */
-			qcom,gpu-pwrlevel@5 {
-				reg = <5>;
+			qcom,gpu-pwrlevel@1 {
+				reg = <1>;
 				qcom,gpu-freq = <1000000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO>;
 
@@ -574,8 +574,8 @@
 			};
 
 			/* Nom_L1 */
-			qcom,gpu-pwrlevel@6 {
-				reg = <6>;
+			qcom,gpu-pwrlevel@2 {
+				reg = <2>;
 				qcom,gpu-freq = <925000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_NOM_L1>;
 
@@ -587,8 +587,8 @@
 			};
 
 			/* Nom */
-			qcom,gpu-pwrlevel@7 {
-				reg = <7>;
+			qcom,gpu-pwrlevel@3 {
+				reg = <3>;
 				qcom,gpu-freq = <800000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_NOM>;
 
@@ -600,8 +600,8 @@
 			};
 
 			/* SVS_L2 */
-			qcom,gpu-pwrlevel@8 {
-				reg = <8>;
+			qcom,gpu-pwrlevel@4 {
+				reg = <4>;
 				qcom,gpu-freq = <744000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L2>;
 
@@ -613,8 +613,8 @@
 			};
 
 			/* SVS_L1 */
-			qcom,gpu-pwrlevel@9 {
-				reg = <9>;
+			qcom,gpu-pwrlevel@5 {
+				reg = <5>;
 				qcom,gpu-freq = <687000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L1>;
 
@@ -626,8 +626,8 @@
 			};
 
 			/* SVS */
-			qcom,gpu-pwrlevel@10 {
-				reg = <10>;
+			qcom,gpu-pwrlevel@6 {
+				reg = <6>;
 				qcom,gpu-freq = <550000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS>;
 
@@ -639,8 +639,8 @@
 			};
 
 			/* Low_SVS */
-			qcom,gpu-pwrlevel@11 {
-				reg = <11>;
+			qcom,gpu-pwrlevel@7 {
+				reg = <7>;
 				qcom,gpu-freq = <390000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS>;
 
@@ -652,8 +652,8 @@
 			};
 
 			/* Low_SVS_D1 */
-			qcom,gpu-pwrlevel@12 {
-				reg = <12>;
+			qcom,gpu-pwrlevel@8 {
+				reg = <8>;
 				qcom,gpu-freq = <300000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
@@ -675,8 +675,8 @@
 			qcom,initial-pwrlevel = <8>;
 
 			/* SVS_L1 */
-			qcom,gpu-pwrlevel@9 {
-				reg = <9>;
+			qcom,gpu-pwrlevel@0 {
+				reg = <0>;
 				qcom,gpu-freq = <687000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L1>;
 
@@ -688,8 +688,8 @@
 			};
 
 			/* SVS */
-			qcom,gpu-pwrlevel@10 {
-				reg = <10>;
+			qcom,gpu-pwrlevel@1 {
+				reg = <1>;
 				qcom,gpu-freq = <550000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS>;
 
@@ -701,8 +701,8 @@
 			};
 
 			/* Low_SVS */
-			qcom,gpu-pwrlevel@11 {
-				reg = <11>;
+			qcom,gpu-pwrlevel@2 {
+				reg = <2>;
 				qcom,gpu-freq = <390000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS>;
 
@@ -714,8 +714,8 @@
 			};
 
 			/* Low_SVS_D1 */
-			qcom,gpu-pwrlevel@12 {
-				reg = <12>;
+			qcom,gpu-pwrlevel@3 {
+				reg = <3>;
 				qcom,gpu-freq = <300000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
