@@ -30,7 +30,7 @@
 
 	qcom,min-access-length = <32>;
 
-	qcom,ubwc-mode = <5>;
+	qcom,ubwc-mode = <4>;
 
 	qcom,tzone-names = "gpu-0", "gpu-1";
 
