@@ -144,6 +144,8 @@
 				qcom,bus-freq = <2>;
 				qcom,bus-min = <1>;
 				qcom,bus-max = <4>;
+
+				qcom,acd-level = <ACD_LEVEL_LOW_SVS_D2>;
 			};
 
 			/* LOW_SVS_D3 */
@@ -155,6 +157,8 @@
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
 				qcom,bus-max = <1>;
+
+				qcom,acd-level = <ACD_LEVEL_LOW_SVS_D3>;
 			};
 		};
 	};
