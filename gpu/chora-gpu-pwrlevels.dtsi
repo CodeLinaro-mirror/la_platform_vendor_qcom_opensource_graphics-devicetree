@@ -23,13 +23,13 @@
 				qcom,gpu-freq = <1175000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO_L2>;
 
-				qcom,bus-freq-ddr7 = <9>;
-				qcom,bus-min-ddr7 = <9>;
-				qcom,bus-max-ddr7 = <9>;
+				qcom,bus-freq-ddr7 = <10>;
+				qcom,bus-min-ddr7 = <10>;
+				qcom,bus-max-ddr7 = <10>;
 
-				qcom,bus-freq-ddr8 = <8>;
-				qcom,bus-min-ddr8 = <8>;
-				qcom,bus-max-ddr8 = <8>;
+				qcom,bus-freq-ddr8 = <9>;
+				qcom,bus-min-ddr8 = <9>;
+				qcom,bus-max-ddr8 = <9>;
 			};
 
 			qcom,gpu-pwrlevel@1 {
@@ -172,13 +172,13 @@
 				qcom,gpu-freq = <1150000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO_L2>;
 
-				qcom,bus-freq-ddr7 = <9>;
-				qcom,bus-min-ddr7 = <9>;
-				qcom,bus-max-ddr7 = <9>;
+				qcom,bus-freq-ddr7 = <10>;
+				qcom,bus-min-ddr7 = <10>;
+				qcom,bus-max-ddr7 = <10>;
 
-				qcom,bus-freq-ddr8 = <8>;
-				qcom,bus-min-ddr8 = <8>;
-				qcom,bus-max-ddr8 = <8>;
+				qcom,bus-freq-ddr8 = <9>;
+				qcom,bus-min-ddr8 = <9>;
+				qcom,bus-max-ddr8 = <9>;
 			};
 
 			qcom,gpu-pwrlevel@1 {
