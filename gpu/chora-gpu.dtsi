@@ -55,7 +55,8 @@
 		<MHZ_TO_KBPS(1555, 4)>, /* index=6 NOM		*/
 		<MHZ_TO_KBPS(1708, 4)>, /* index=7 NOM		*/
 		<MHZ_TO_KBPS(2092, 4)>, /* index=8 TURBO	*/
-		<MHZ_TO_KBPS(2133, 4)>; /* index=9 TURBO	*/
+		<MHZ_TO_KBPS(2133, 4)>, /* index=9 TURBO	*/
+		<MHZ_TO_KBPS(4761, 4)>;	/* index=10 Dummy IB for max IB/AXI clock vote */
 
 	qcom,bus-table-ddr8 =
 		<MHZ_TO_KBPS(0, 4)>,	/* index=0			*/
@@ -66,7 +67,8 @@
 		<MHZ_TO_KBPS(1708, 4)>, /* index=5 SVS L1	*/
 		<MHZ_TO_KBPS(2092, 4)>, /* index=6 NOM		*/
 		<MHZ_TO_KBPS(2736, 4)>, /* index=7 TURBO	*/
-		<MHZ_TO_KBPS(3196, 4)>; /* index=8 TURBO L1	*/
+		<MHZ_TO_KBPS(3196, 4)>, /* index=8 TURBO L1	*/
+		<MHZ_TO_KBPS(4761, 4)>;	/* index=9 Dummy IB for max IB/AXI clock vote */
 
 	zap-shader {
 		memory-region = <&gpu_microcode_mem>;
