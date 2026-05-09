@@ -10,6 +10,10 @@
 #define FC_UNKNOWN 0x0
 #define FC_AB 0x2
 
+/* SubPart feature code */
+#define FC_W0 0x00d1
+#define FC_W1 0x00d2
+
 /* Internal feature codes */
 #define FC_Y0 0x00f1
 #define FC_Y1 0x00f2
@@ -17,6 +21,8 @@
 /* Pcodes */
 #define PCODE_UNKNOWN 0
 #define PCODE_0 1
+#define PCODE_1 2
+#define PCODE_2 3
 
 #define SKU_CODE(pcode, featurecode) ((pcode << 16) + featurecode)
 
