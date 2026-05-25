@@ -61,6 +61,11 @@ dtbo-y += gpu/lahaina-gpu.dtbo \
 		gpu/lahaina-v2-gpu.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_WAIPIO), y)
+dtbo-y += gpu/waipio-gpu.dtbo \
+		gpu/waipio-v2-gpu.dtbo
+endif
+
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
 clean-files    := *.dtb *.dtbo
