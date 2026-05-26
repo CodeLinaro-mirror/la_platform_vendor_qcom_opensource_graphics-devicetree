@@ -48,6 +48,10 @@ ifeq ($(CONFIG_ARCH_CHORA), y)
 dtbo-y += gpu/chora-gpu.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_DIWALI), y)
+dtbo-y += gpu/diwali-gpu.dtbo
+endif
+
 ifeq ($(CONFIG_ARCH_MALABAR), y)
 dtbo-y += gpu/malabar-gpu.dtbo
 endif
