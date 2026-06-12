@@ -22,6 +22,7 @@
 
 	qcom,initial-pwrlevel = <6>;
 
+	qcom,tzone-names = "gpu";
 	qcom,ubwc-mode = <1>;
 	qcom,min-access-length = <64>;
 
