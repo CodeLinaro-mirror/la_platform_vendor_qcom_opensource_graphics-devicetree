@@ -45,6 +45,8 @@
 	qcom,chipid = <0x06010903>;
 	qcom,gpu-model = "Adreno629b";
 
+	qcom,tzone-names = "gpuss-0", "gpuss-1";
+
 	interconnects = <&gem_noc MASTER_GFX3D &mc_virt SLAVE_EBI1>;
 	interconnect-names = "gpu_icc_path";
 
