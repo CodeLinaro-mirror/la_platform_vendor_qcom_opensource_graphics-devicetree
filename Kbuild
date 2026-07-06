@@ -57,7 +57,8 @@ dtbo-y += gpu/yupik-gpu.dtbo
 endif
 
 ifeq ($(CONFIG_ARCH_LAHAINA), y)
-dtbo-y += gpu/lahaina-gpu.dtbo
+dtbo-y += gpu/lahaina-gpu.dtbo \
+		gpu/lahaina-v2-gpu.dtbo
 endif
 
 ifeq ($(CONFIG_ARCH_BOURTZI), y)
