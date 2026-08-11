@@ -35,9 +35,9 @@
 	reg = <0x0 0x3d00000 0x0 0x40000>, <0x0 0x3d50000 0x0 0x10000>,
 		<0x0 0x3d61000 0x0 0x3000>, <0x0 0x3d9e000 0x0 0x2000>,
 		<0x0 0x11100000 0x0 0x80000>, <0x0 0x10048000 0x0 0x8000>,
-		<0x0 0x11305000 0x0 0x1000>;
+		<0x0 0x11305000 0x0 0x1000>, <0x0 0x3d90000 0x0 0x10000>;
 	reg-names = "kgsl_3d0_reg_memory", "rscc", "cx_dbgc", "cx_misc",
-		"qdss_gfx", "qdss_etr", "qdss_tmc";
+		"qdss_gfx", "qdss_etr", "qdss_tmc", "gpucc";
 
 	interrupts = <0 300 IRQ_TYPE_LEVEL_HIGH>, <0 80 IRQ_TYPE_LEVEL_HIGH>;
 	interrupt-names = "kgsl_3d0_irq", "cx_host_irq";
@@ -83,8 +83,14 @@
 		<MHZ_TO_KBPS(4780, 4)>, /*  TURBO_L3 index=10 */
 		<MHZ_TO_KBPS(5333, 4)>; /*  TURBO_L5 index=11 */
 
-	nvmem-cells = <&gpu_debug_bus_bin>, <&gpu_speed_bin>;
-	nvmem-cell-names = "gpu_debug_bus_bin", "speed_bin";
+	nvmem-cells = <&gpu_debug_bus_bin>,
+			<&debugbus_en>,
+			<&gpu_niden_en>,
+			<&gpu_speed_bin>;
+	nvmem-cell-names = "gpu_debug_bus_bin",
+			"debugbus_en",
+			"gpu_niden_en",
+			"speed_bin";
 
 	zap-shader {
 		memory-region = <&gpu_microcode_mem>;
