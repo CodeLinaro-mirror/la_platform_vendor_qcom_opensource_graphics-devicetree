@@ -22,11 +22,13 @@
 			<&gcc GCC_GPU_SNOC_DVM_GFX_CLK>,
 			<&gpucc GPU_CC_AHB_CLK>,
 			<&aoss_qmp QDSS_CLK>,
+			<&gpucc GPU_CC_GPU_SMMU_VOTE_CLK>,
 			<&gpucc GPU_CC_MEMNOC_GFX_CLK>;
 	clock-names = "gcc_gpu_memnoc_gfx",
 			"gcc_gpu_snoc_dvm_gfx",
 			"gpu_cc_ahb",
 			"apb_pclk",
+			"gpu_cc_hlos1_vote_gpu_smmu",
 			"gpu_cc_memnoc_gfx_clk";
 
 	qcom,min-access-length = <32>;
@@ -163,10 +165,12 @@
 			<&gcc GCC_GPU_MEMNOC_GFX_CLK>,
 			<&gpucc GPU_CC_AHB_CLK>,
 			<&gpucc GPU_CC_HUB_CX_INT_CLK>,
+			<&gpucc GPU_CC_GPU_SMMU_VOTE_CLK>,
 			<&gpucc GPU_CC_MEMNOC_GFX_CLK>;
 
 		clock-names = "gmu_clk", "cxo_clk", "axi_clk",
-			"memnoc_clk", "ahb_clk", "hub_clk", "gpu_cc_memnoc_gfx_clk";
+			"memnoc_clk", "ahb_clk", "hub_clk", "gpu_cc_hlos1_vote_gpu_smmu",
+			"gpu_cc_memnoc_gfx_clk";
 
 		qcom,gmu-freq-table = <350000000 RPMH_REGULATOR_LEVEL_LOW_SVS>,
 					<650000000 RPMH_REGULATOR_LEVEL_SVS>;
