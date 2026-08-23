@@ -35,9 +35,9 @@
 	reg = <0x0 0x3d00000 0x0 0x40000>, <0x0 0x3d50000 0x0 0x10000>,
 		<0x0 0x3d61000 0x0 0x3000>, <0x0 0x3d9e000 0x0 0x2000>,
 		<0x0 0x11100000 0x0 0x80000>, <0x0 0x10048000 0x0 0x8000>,
-		<0x0 0x11305000 0x0 0x1000>;
+		<0x0 0x11305000 0x0 0x1000>, <0x0 0x3d90000 0x0 0x10000>;
 	reg-names = "kgsl_3d0_reg_memory", "rscc", "cx_dbgc", "cx_misc",
-		"qdss_gfx", "qdss_etr", "qdss_tmc";
+		"qdss_gfx", "qdss_etr", "qdss_tmc", "gpucc";
 
 	interrupts = <0 300 IRQ_TYPE_LEVEL_HIGH>, <0 80 IRQ_TYPE_LEVEL_HIGH>;
 	interrupt-names = "kgsl_3d0_irq", "cx_host_irq";
@@ -267,6 +267,7 @@
 
 &funnel_gfx {
 	status = "ok";
+	compatible = "arm,primecell", "qcom,coresight-funnel-gfx";
 	in-ports {
 		#address-cells = <1>;
 		#size-cells = <0>;
@@ -274,16 +275,16 @@
 		port@0 {
 			reg = <0>;
 			funnel_gfx_in_gx_dbgc: endpoint {
-			remote-endpoint =
-				<&gx_dbgc_out_funnel_gfx>;
+				remote-endpoint =
+					<&gx_dbgc_out_funnel_gfx>;
 			};
 		};
 
 		port@1 {
 			reg = <1>;
 			funnel_gfx_in_cx_dbgc: endpoint {
-			remote-endpoint =
-				<&cx_dbgc_out_funnel_gfx>;
+				remote-endpoint =
+					<&cx_dbgc_out_funnel_gfx>;
 			};
 		};
 	};
